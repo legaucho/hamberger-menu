@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Animation</title>
+</head>
+<body>
+
+<div class="conteiner">
+
+    <div class="lignes_conteneur">
+        <div class="lignes lignes_1">
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+        </div>
+    </div>
+    <div class="lignes_conteneur">
+        <div class="lignes lignes_2">
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+        </div>
+    </div>
+    <div class="lignes_conteneur">
+        <div class="lignes lignes_3">
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+        </div>
+    </div>
+    <div class="lignes_conteneur">
+        <div class="lignes lignes_4">
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+        </div>
+    </div>
+    <div class="lignes_conteneur">
+        <div class="lignes lignes_5">
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+        </div>
+    </div>
+    <div class="lignes_conteneur">
+        <div class="lignes lignes_6">
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+        </div>
+    </div>
+    <div class="lignes_conteneur">
+        <div class="lignes lignes_7">
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+        </div>
+    </div>
+    <div class="lignes_conteneur">
+        <div class="lignes lignes_8">
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+        </div>
+    </div>
+    <div class="lignes_conteneur">
+        <div class="lignes lignes_9">
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+        </div>
+    </div>
+    <div class="lignes_conteneur">
+        <div class="lignes lignes_10">
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+        </div>
+    </div>
+    <div class="lignes_conteneur">
+        <div class="lignes lignes_11">
+            <span class="ligne_unique"></span>
+        </div>
+    </div>
+    <div class="lignes_conteneur">
+        <div class="lignes lignes_12">
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+            <span class="ligne"></span>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const toggleButton = document.querySelectorAll('.lignes_conteneur')
+        toggleButton.forEach(btn => {
+            btn.addEventListener('click',  () => {
+                btn.classList.toggle('le_toggle')
+            })
+        });
+    </script>
+
+
+</body>
+</html>

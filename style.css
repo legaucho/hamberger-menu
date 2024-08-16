@@ -1,0 +1,267 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+}
+
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    margin: 0 auto;
+}
+
+.lignes_conteneur{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lignes{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.ligne{
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(46, 247, 89);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.lignes_11{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/****************************** BURGER 1 *************************/
+
+.lignes_conteneur.le_toggle .lignes_1 .ligne:nth-child(2){
+    transform: translateX(-20px);
+    opacity: 0;
+}
+.lignes_conteneur.le_toggle .lignes_1 .ligne:nth-child(1){
+    transform: translateY(15px) rotate(135deg);
+}
+.lignes_conteneur.le_toggle .lignes_1 .ligne:nth-child(3){
+    transform: translateY(-15px) rotate(-135deg);
+}
+
+/****************************** BURGER 2 *************************/
+
+.lignes_conteneur.le_toggle .lignes_2 .ligne:nth-child(2){
+    opacity: 0;
+}
+.lignes_conteneur.le_toggle .lignes_2 .ligne:nth-child(1){
+    transform: translateY(15px);
+}
+.lignes_conteneur.le_toggle .lignes_2 .ligne:nth-child(3){
+    transform: translateY(-15px) rotate(90deg);
+}
+/****************************** BURGER 3 *************************/
+
+.lignes_conteneur.le_toggle .lignes_3 .ligne:nth-child(1){
+    transform: translateY(15px);
+}
+.lignes_conteneur.le_toggle .lignes_3 .ligne:nth-child(3){
+    transform: translateY(-15px);
+}
+/****************************** BURGER 4 *************************/
+
+.lignes_conteneur.le_toggle .lignes_4{
+    transform: rotate(90deg);
+}
+.lignes_conteneur.le_toggle .lignes_4 .ligne:nth-child(2){
+    opacity: 0;
+}
+.lignes_conteneur.le_toggle .lignes_4 .ligne:nth-child(1){
+    width: 45px;
+    transform: rotate(45deg);
+
+}
+.lignes_conteneur.le_toggle .lignes_4 .ligne:nth-child(3){
+    width: 45px;
+    transform: rotate(-45deg);
+}
+/****************************** BURGER 5 *************************/
+
+.lignes_5 .ligne:nth-child(2){
+    margin: 0 auto;
+}
+.lignes_conteneur.le_toggle .lignes_5 .ligne:nth-child(2){
+   
+    width: 0;
+}
+.lignes_conteneur.le_toggle .lignes_5 .ligne:nth-child(3){
+    transform: rotate(90deg) translateX(-15px);
+}
+.lignes_conteneur.le_toggle .lignes_5 .ligne:nth-child(1){
+    transform: translateY(15px) ;
+}
+
+.lignes_conteneur.le_toggle .lignes_5{
+    transform: rotate(45deg);
+    transition: all .5s .8s ease-in-out;
+}
+
+/****************************** BURGER 6 *************************/
+
+
+.lignes_conteneur.le_toggle .lignes_6 .ligne:nth-child(1){
+    transform: translateX(30px) ;
+    opacity: 0;
+}
+.lignes_conteneur.le_toggle .lignes_6 .ligne:nth-child(3){
+    transform: translateX(-30px) ;
+    opacity: 0;
+}
+
+/****************************** BURGER 7 *************************/
+
+.lignes_conteneur.le_toggle .lignes_7{
+    transform: rotate(30deg);
+}
+.lignes_conteneur.le_toggle .lignes_7 .ligne:nth-child(1){
+    width: 30px;   
+    margin: 5px 0;
+}
+.lignes_conteneur.le_toggle .lignes_7 .ligne:nth-child(2){
+    width: 40px;    
+    margin: 5px 0;
+}
+.lignes_conteneur.le_toggle .lignes_7 .ligne:nth-child(3){
+    width: 50px;
+    margin: 5px 0;
+}
+
+/****************************** BURGER 8 *************************/
+
+.lignes_conteneur .lignes_8{
+    border-radius: 50%;
+    border: 4px solid transparent;
+}
+.lignes_conteneur.le_toggle .lignes_8{
+    transition-delay: .4s;
+    transform: rotate(45deg);
+    border: solid 4px rgb(46, 247, 89);
+}
+.lignes_conteneur.le_toggle .lignes_8 .ligne:nth-child(2){
+    opacity: 0;
+}
+.lignes_conteneur.le_toggle .lignes_8 .ligne:nth-child(1){
+    width: 30px;
+    transform: translate( 10px, 14px);
+}
+.lignes_conteneur.le_toggle .lignes_8 .ligne:nth-child(3){
+    width: 30px;
+    transform: translate(10px, -16px) rotate(90deg);
+}
+
+
+
+/****************************** BURGER 9 *************************/
+
+
+@keyframes animationScale {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.lignes_conteneur.le_toggle .lignes_9{
+    animation: animationScale .7s ease-in-out;
+}
+.lignes_conteneur.le_toggle .lignes_9 .ligne:nth-child(1){
+    transform: translateY(15px) rotate(45deg) ;
+    
+}
+.lignes_conteneur.le_toggle .lignes_9 .ligne:nth-child(2){
+    opacity: 0;
+    
+}
+.lignes_conteneur.le_toggle .lignes_9 .ligne:nth-child(3){
+    transform: translateY(-15px) rotate(-45deg) ;
+}
+
+/****************************** BURGER 10 *************************/
+
+.lignes_conteneur.le_toggle .lignes_10{
+    transform: rotate(360deg);
+    transition: all .3s;
+}
+.lignes_conteneur.le_toggle .lignes_10 .ligne{
+    transition: all .1s;
+}
+.lignes_conteneur.le_toggle .lignes_10 .ligne:nth-child(1){
+    transform: translateY(15px) rotate(45deg) ;
+}
+.lignes_conteneur.le_toggle .lignes_10 .ligne:nth-child(2){
+    opacity: 0;
+}
+.lignes_conteneur.le_toggle .lignes_10 .ligne:nth-child(3){
+    transform: translateY(-15px) rotate(-45deg) ;
+}
+
+/****************************** BURGER 11 *************************/
+
+.ligne_unique{
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: rgb(46, 247, 89);
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+.ligne_unique::before{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(46, 247, 89);
+    bottom: 15px;
+    transition: bottom .3s .5s ease-in-out, transform .3s ease-in-out;
+
+}
+.ligne_unique::after{
+   position: absolute;
+    content: "";
+    width: 60px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(46, 247, 89);
+    top: 15px;
+    transition: top .3s .5s ease-in-out, transform .3s ease-in-out;
+
+}
+
+ .lignes_conteneur.le_toggle .lignes_11 .ligne_unique::after{
+    top: 0;
+    transform: rotate(45deg);
+    transition: top .3s ease-in-out, transform .3s .5s ease-in-out;
+ }
+ .lignes_conteneur.le_toggle .lignes_11 .ligne_unique{
+    background-color: rgba(0, 0, 0, 0);
+ }
+ .lignes_conteneur.le_toggle .lignes_11 .ligne_unique::before{
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom .3s ease-in-out, transform .3s .5s ease-in-out;
+ }
+
+/****************************** BURGER 12 *************************/
